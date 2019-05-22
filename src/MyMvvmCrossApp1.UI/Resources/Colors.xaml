@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="MyMvvmCrossApp1.UI.Resources.Colors"
+                    xmlns:local="clr-namespace:MyMvvmCrossApp1.UI.Resources">
+
+    <Color x:Key="PrimaryColor">#4c555a</Color>
+    <Color x:Key="PrimaryDarkColor">#242c31</Color>
+    <Color x:Key="PrimaryLightColor">#788187</Color>
+
+    <Color x:Key="AccentColor">#24b780</Color>
+    <Color x:Key="AccentDarkColor">#008653</Color>
+    <Color x:Key="AccentLightColor">#64eab0</Color>
+
+    <Color x:Key="PrimaryTextColor">#000000</Color>
+    <Color x:Key="SecondaryTextColor">#ffffff</Color>
+
+    <Color x:Key="AppAccentYellowColor" >#EAB400</Color>
+    <Color x:Key="AppAccentOrangeColor" >#EE531C</Color>
+    <Color x:Key="AppAccentGreenColor" >#548E21</Color>
+    <Color x:Key="HeaderBackgroundColor" >#262729</Color>
+    <Color x:Key="NavigationButtonBackgroundColor" >#262729</Color>
+    <Color x:Key="HeaderTextColor">#C2C2C2</Color>
+    <Color x:Key="TetraryTextColor">#AFAFAF</Color>
+   
+
+    <Color x:Key="BoxBorderColor">#262729</Color>
+
+</ResourceDictionary>

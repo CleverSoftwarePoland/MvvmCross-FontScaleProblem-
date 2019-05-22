@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="MyMvvmCrossApp1.UI.Resources.Fonts"
+                    xmlns:local="clr-namespace:MyMvvmCrossApp1.UI.Resources">
+
+
+    <!--Font family-->
+    <OnPlatform 
+            x:Key="FontFamilyRegular"
+            x:TypeArguments="x:String">
+        <On Platform="Android" Value="sans-serif"/>
+        <On Platform="iOS" Value="HelveticaNeue"/>
+        <On Platform="WinPhone, Windows, UWP" Value="HelveticaNeue"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontFamilyLight"
+            x:TypeArguments="x:String">
+        <On Platform="Android" Value="sans-serif-light"/>
+        <On Platform="iOS" Value="HelveticaNeue-Light"/>
+        <On Platform="WinPhone, Windows, UWP" Value="HelveticaNeue-Light"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontFamilyMedium"
+            x:TypeArguments="x:String">
+        <On Platform="Android" Value="sans-serif-medium"/>
+        <On Platform="iOS" Value="HelveticaNeue-Medium"/>
+        <On Platform="WinPhone, Windows, UWP" Value="HelveticaNeue-Medium"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontFamilyBold"
+            x:TypeArguments="x:String">
+        <On Platform="Android" Value="sans-serif-black"/>
+        <On Platform="iOS" Value="HelveticaNeue-Bold"/>
+        <On Platform="WinPhone, Windows, UWP" Value="HelveticaNeue-Bold"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeHeader"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="60"/>
+        <On Platform="iOS" Value="50"/>
+        <On Platform="WinPhone, Windows, UWP" Value="40"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeExtraLarge"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="36"/>
+        <On Platform="iOS" Value="32"/>
+        <On Platform="WinPhone, Windows, UWP" Value="40"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeLargeL"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="36"/>
+        <On Platform="iOS" Value="32"/>
+        <On Platform="WinPhone, Windows, UWP" Value="40"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeLarge"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="24"/>
+        <On Platform="iOS" Value="20"/>
+        <On Platform="WinPhone, Windows, UWP" Value="30"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeMediumL"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="20" />
+        <On Platform="iOS" Value="16"/>
+        <On Platform="WinPhone, Windows, UWP" Value="10"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeMedium"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="18"/>
+        <On Platform="iOS" Value="14"/>
+        <On Platform="WinPhone, Windows, UWP" Value="8"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeRegular"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="14"/>
+        <On Platform="iOS" Value="12"/>
+        <On Platform="WinPhone, Windows, UWP" Value="12"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeSmall"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="13"/>
+        <On Platform="iOS" Value="10"/>
+        <On Platform="WinPhone, Windows, UWP" Value="10"/>
+    </OnPlatform>
+
+    <OnPlatform 
+            x:Key="FontSizeMicro"
+            x:TypeArguments="x:Double">
+        <On Platform="Android" Value="12"/>
+        <On Platform="iOS" Value="9"/>
+        <On Platform="WinPhone, Windows, UWP" Value="10"/>
+    </OnPlatform>
+
+
+    <Style TargetType="Label" ApplyToDerivedTypes="True" CanCascade="True">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyRegular}"/>
+    </Style>
+
+    <Style x:Key="ContentPageStyle" TargetType="ContentPage">
+        <Setter Property="NavigationPage.BackButtonTitle" Value="" />
+        <Setter Property="BackgroundColor" Value="#FAFAFA"/>
+    </Style>
+
+    <Style x:Key="lbTrailViewLiveValueStyle" TargetType="Label" ApplyToDerivedTypes="True" CanCascade="True">
+        <Setter Property="HeightRequest" Value="38"/>
+        <Setter Property="Margin" Value="0,0,12,0"/>
+        <Setter Property="HorizontalOptions" Value="End"/>
+     
+        <Setter Property="FontSize" Value="{StaticResource FontSizeLargeL}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyBold}"/>
+    </Style>
+
+    <Style x:Key="lbTrailViewLiveValueTitleStyle" TargetType="Label" ApplyToDerivedTypes="True" CanCascade="True">
+        <Setter Property="HeightRequest" Value="22"/>
+        <Setter Property="Margin" Value="0,0,12,0"/>
+        <Setter Property="HorizontalOptions" Value="End"/>
+       
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyLight}"/>
+    </Style>
+</ResourceDictionary>
